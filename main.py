@@ -142,9 +142,7 @@ with st.sidebar:
 	if details:
 		with st.spinner("Processing..."):
 			time.sleep(1)
-			st.write("Searching in the database...")
+			st.write("Generating...")
 			time.sleep(1)
-			st.write("Generating response...")
-			time.sleep(1)
-			st.write("Formatting response...")
+			st.write("Formatting...")
 		st.write(details)
