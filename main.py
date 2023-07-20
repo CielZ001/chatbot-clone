@@ -79,7 +79,7 @@ def extract_page_content_and_title(result):
 
         # Append the extracted 'page_content' and 'title' to the string
         if page_content and title:
-            extracted_string += f"Title: {title}\n\n\n Content Location: {page_content}\n\n----------------------\n\n"
+            extracted_string += f"----------------------\n\nPaper Title: {title}\n\n\n Content Location: {page_content}\n\n"
 
     return extracted_string
 
