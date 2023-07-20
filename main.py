@@ -139,7 +139,7 @@ with response_container:
 				message(st.session_state["requests"][i], is_user=True, key=str(i) + '_user')
 
 with st.sidebar:
-	if st.session_state['responses']:
+	if details:
 		with st.spinner("Processing..."):
 			time.sleep(1)
 			st.write("Searching in the database...")
