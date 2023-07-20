@@ -140,4 +140,11 @@ with response_container:
 
 with st.sidebar:
 	if st.session_state['responses']:
+		with st.spinner("Processing..."):
+			time.sleep(1)
+			st.write("Searching in the database...")
+			time.sleep(1)
+			st.write("Generating response...")
+			time.sleep(1)
+			st.write("Formatting response...")
 		st.write(details)
